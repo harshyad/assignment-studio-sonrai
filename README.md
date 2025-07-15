@@ -49,3 +49,19 @@ The project includes unit tests for the service layer. You can run the tests usi
 ## Logging
 
 The application includes a simple logging utility that logs messages to the console. You can modify the logging behavior in the `src/utils/logger.ts` file.
+
+
+## Docker 
+To build and run the application using Docker:
+
+1. **Build the Docker image:**
+   ```
+   docker build -t site-inspection-api .
+   ```
+
+2. **Run the Docker container:**
+   ```
+   docker run -p 3000:3000 site-inspection-api
+   ```
+
+This will start the API on port 3000. You can adjust the port mapping as needed.
